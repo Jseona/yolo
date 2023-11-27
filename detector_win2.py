@@ -24,7 +24,7 @@ def detect_target():
     #이미지 분석을 위해 flask서버에 이미지를 임시 복사
     #리눅스 서버시 base_directory = "/home/ubuntu..."    
     # base_directory = "c:\AI\image"
-    base_directory = "/home/yolo5/yolo/image"
+    base_directory = "/home/AI/yolo/image"
     file_path = os.path.join(base_directory, file_name)	
 
     #img.save(file_path) #분석을 위한 이미지파일 임시 저장(1)
@@ -38,7 +38,7 @@ def detect_target():
     #uuid = request.form.get('uuid')  결과값 폴더를 임의로 작성할 때(자바로부터 임의의 폴더명을 받아 온다.)
     #print(file_name)
     uuid = "result" #고정된 폴더명을 사용할 때
-    ret_path = '/home/yolo5/yolo/yolov5/runs/detect/result' #결과가 저장되는 위치
+    ret_path = '/home/AI/yolo/yolov5/runs/detect/result' #결과가 저장되는 위치
 
 
     if os.path.isdir(ret_path): #기존 폴더가 존재하면 삭제처리
