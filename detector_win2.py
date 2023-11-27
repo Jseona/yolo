@@ -24,7 +24,7 @@ def detect_target():
     #이미지 분석을 위해 flask서버에 이미지를 임시 복사
     #리눅스 서버시 base_directory = "/home/ubuntu..."    
     # base_directory = "c:\AI\image"
-    base_directory = "/home/yolo3/yolo/image"
+    base_directory = "/home/yolo4/yolo/image"
     file_path = os.path.join(base_directory, file_name)	
 
     #img.save(file_path) #분석을 위한 이미지파일 임시 저장(1)
